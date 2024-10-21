@@ -19,7 +19,7 @@ phases:
     commands:
       - echo Build completed on 'date'
       - echo pushing to repo
-      - docker push $REPOSITORY_URI:latest
+      - docker push $REPOSITORY_URI:Latest
       - docker push $REPOSITORY_USI:$IMAGE_TAG
       - echo Writing image definitions file...
       - DOCKER_CONTAINER_NAME=bookmanagement
