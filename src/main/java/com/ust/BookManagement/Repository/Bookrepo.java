@@ -1,7 +1,9 @@
 package com.ust.BookManagement.Repository;
 
 import com.ust.BookManagement.Model.Book;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
 
-public interface Bookrepo extends JpaRepository<Book, Integer> {
+@Repository
+public interface Bookrepo extends MongoRepository<Book, Integer> {
 }
