@@ -32,6 +32,11 @@ public class Bookservice {
         return this.bookrepo.findAll();
     }
 
+    public void deleteBook(int id)
+    {
+        this.bookrepo.deleteById(id);
+    }
+
     @CircuitBreaker(name = "cirbook", fallbackMethod = "authorFallBack")
     public Authordto getBookByAuthor(String authorid)
     {
